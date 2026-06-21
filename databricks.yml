@@ -7,3 +7,16 @@ include:
 targets:
   dev:
     default: true
+
+  test:
+    resources:
+      jobs:
+        coretec_pipeline:
+          name: coretec_pipeline_test
+
+  prod:
+    resources:
+      jobs:
+        coretec_pipeline:
+          name: coretec_pipeline_prod
+          
